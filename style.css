@@ -380,3 +380,10 @@ video {
         text-align: center;
     }
 }
+
+/* Ensure the toggle button is hidden on wider (desktop) screens */
+@media (min-width: 641px) {
+	.nav-toggle {
+		display: none !important;
+	}
+}
