@@ -312,3 +312,71 @@ video {
 		width: 100%;
 	}
 }
+.nav-toggle {
+    display: none;
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text);
+    font: inherit;
+}
+
+.nav-toggle__icon {
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: currentColor;
+    position: relative;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.nav-toggle__icon::before,
+.nav-toggle__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 2px;
+    background: currentColor;
+}
+
+.nav-toggle__icon::before {
+    top: -6px;
+}
+
+.nav-toggle__icon::after {
+    top: 6px;
+}
+
+.site-nav__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (max-width: 640px) {
+    .nav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .site-nav__links {
+        display: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .site-nav.is-open .site-nav__links {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .site-nav a {
+        width: 100%;
+        text-align: center;
+    }
+}

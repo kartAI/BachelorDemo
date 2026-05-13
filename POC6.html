@@ -9,15 +9,22 @@
 <body>
     <div class="page-shell">
         <nav class="site-nav" aria-label="Hovedmeny">
-            <a href="index.html">Prosjektet</a>
-            <a href="POC1.html">POC1</a>
-            <a href="POC2.html">POC2</a>
-            <a href="POC3.html">POC3</a>
-            <a href="POC4.html">POC4</a>
-            <a href="POC5.html">POC5</a>
-            <a href="POC6.html">POC6</a>
-            <a href="om-oss.html">Om Oss</a>
-        </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">
+        <span class="nav-toggle__icon" aria-hidden="true"></span>
+        <span class="nav-toggle__text">Meny</span>
+    </button>
+
+    <div class="site-nav__links" id="primary-menu">
+        <a href="index.html">Prosjektet</a>
+        <a href="POC1.html">POC1</a>
+        <a href="POC2.html">POC2</a>
+        <a href="POC3.html">POC3</a>
+        <a href="POC4.html">POC4</a>
+        <a href="POC5.html">POC5</a>
+        <a href="POC6.html">POC6</a>
+        <a href="om-oss.html">Om Oss</a>
+    </div>
+</nav>
         <main class="container section poc-page">
             <p class="section-label">POC 6</p>
             <h1>POC 6: Forenkling av planforslag for innbyggere</h1>
@@ -44,5 +51,6 @@
         </ul>
         </main>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
